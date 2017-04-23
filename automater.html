@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>Automater</title>
+       
+       <meta charset=utf-8>
+       <meta name=viewport content="width=device-width, initial-scale=1">
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+       <script src="js/randCol.js"></script>
+       <script src="js/randChar.js"></script>
+       <script src="js/draggable.js"></script>
+       
+       <style>
+           *, *:after, *:b\efore {
+               -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+               box-sizing: border-box;
+           }
+           
+           ::selection {
+               background: transparent;
+               outline: 1px solid black;
+           }
+
+           body {
+              font-family: monospace;
+              font-size: 1cm; 
+              background-color: black;
+           }
+
+           .flex {
+               display: flex;
+               flex-wrap: wrap;
+           }
+
+           .bck {
+               display: flex;
+               flex-wrap: wrap;
+               position: fixed;
+               z-index: -1;
+           }
+
+           .bckTxt {
+               transform:rotate(45deg);
+               font-weight: 800;
+               font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+               padding: 3em;
+               font-size: 0.5cm;
+               color:antiquewhite;
+           }
+
+           .drag {
+               cursor: move;
+           }
+
+           .char {
+               margin: 3em;
+           }
+       </style>
+    </head>
+    <body>
+        <div class='bck'>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+            <div class='bckTxt'>Arnold</div>
+        </div>
+        
+        <div class='flex'>
+        </div>
+
+        
+    </body>
+</html>

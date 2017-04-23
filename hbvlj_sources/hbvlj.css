@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a:visited {
+    color: blue;
+}
+
+/**************************/
+/* Frame & Grid Elements */
+/************************/
+
+#frame {
+    z-index: 100;
+    -webkit-box-shadow:inset 0px 0px 0px 10px #0000ff;
+    -moz-box-shadow:inset 0px 0px 0px 10px #0000ff;
+    box-shadow:inset 0px 0px 0px 10px #0000ff;
+}
+
+#frameOut {
+    z-index: 105;
+    -webkit-box-shadow: 0px 0px 0px 10px #0000ff;
+    -moz-box-shadow: 0px 0px 0px 10px #0000ff;
+    box-shadow: 0px 0px 0px 10px #0000ff;
+}
+
+#debug {
+    top: 1em;
+    left: 1em;
+    font-size: 9pt;
+    padding: 0.5em;
+    font-family: "Consolas", monospace;
+    display: none;
+}
+
+#threeFrame {
+    z-index: 200;
+    height: 100%;
+    width: 100%;
+    
+    position: fixed;
+    pointer-events: none;
+}
+
+#gridTable {  
+    width: 180em;
+    height: 180em;
+    position: fixed;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+td {
+    height: auto;
+    width: auto;
+    
+    -webkit-box-shadow: 0px 0px 0px 2px #0000ff;
+    -moz-box-shadow: 0px 0px 0px 2px #0000ff;
+    box-shadow: 0px 0px 0px 2px #0000ff;
+}
+
+/*****************/
+/* class mixins */
+/***************/
+
+.floatDiv {
+    position: fixed;
+}
+
+.vertCenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.blubox {
+    background: white;
+    -webkit-box-shadow: 0px 0px 0px 2px #0000ff;
+    -moz-box-shadow: 0px 0px 0px 2px #0000ff;
+    box-shadow: 0px 0px 0px 2px #0000ff;
+}
+
+.whitebox {
+    -webkit-box-shadow: 0px 0px 0px 2px #FFFFFF;
+    -moz-box-shadow: 0px 0px 0px 2px #FFFFFF;
+    box-shadow: 0px 0px 0px 2px #FFFFFF;
+}
+
+.whiteboxScale {
+    -webkit-box-shadow: 0px 0px 0px 6px #FFFFFF;
+    -moz-box-shadow: 0px 0px 0px 6px #FFFFFF;
+    box-shadow: 0px 0px 0px 6px #FFFFFF;
+}
+
+.ol {
+    outline: 1px solid red;
+}
+
+.tp {
+    background: rgba(0,255,0,0.2);
+}
+
+.pointNull {
+    pointer-events: none;
+}
+
+.fullframe {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hide {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/********************/
+/* Static Elements */
+/******************/
+
+#mandala {
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+
+#copy0 {
+    bottom: 1em;
+    right: 1em;
+}
+
+#src {
+    font-family: "Arial", sans-serif;
+    margin: 1em;
+    padding: 0.3em;
+    float: left;
+    z-index: 55;
+}
+
+#stain {
+    float: left;
+    bottom: -3em;
+    left: -4em;
+    z-index: 0;
+}
+
+#css {
+    position: fixed;
+    font-family: 'Arial', sans-serif;
+    margin: 1em;
+    padding: 0.3em;
+    right: 0;
+    z-index: 56;
+    
+    background: white;
+    -webkit-box-shadow: 0px 0px 0px 2px #0000ff;
+    -moz-box-shadow: 0px 0px 0px 2px #0000ff;
+    box-shadow: 0px 0px 0px 2px #0000ff;
+}
+
+#OFF {
+    text-decoration: line-through;
+}
+
+/***********************/
+/* Para scroll Layers */
+/*********************/
+
+
+/* formula for scale calculation */
+/* 1 + (translateZ * -1) / perspective */
+  
+.paraFrame {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    
+    z-index: 50;
+  }
+
+.paraExclude {
+    overflow: scroll;
+    z-index: 55;
+}
+
+.paraGroup {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+  
+.paraLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+.para0 {
+    transform: translateZ(0);
+  }
+
+.para-0-5 {
+    transform: translateZ(-0.5px);
+  }
+  
+.para-1 {
+    transform: translateZ(-1px) scale(2);
+}
+
+.para-1-2 {
+    transform: translateZ(-1.25px) scale(2);
+}
+
+.para-1-5 {
+    transform: translateZ(-1.5px) scale(2);
+}
+
+.para-1-6 {
+    transform: translateZ(-1.6px) scale(2.1);
+}
+
+.para-2 {
+    transform: translateZ(-2px) scale(2);
+}
+
+.para-2-5 {
+    transform: translateZ(-2.5px) scale(2);
+}
+
+.para-3 {
+    transform: translateZ(-3px) scale(3);
+}
+
+.para-3 {
+    transform: translateZ(-3px) scale(3);
+}
+
+.para-4 {
+    transform: translateZ(-4px) scale(3);
+}
+
+/************************/
+/* Para scroll Content */
+/**********************/
+
+/* text */
+#title {
+    height: 4em;
+    text-align: center;
+    margin: auto; 
+    display: table;
+    transform: translateY(-50%);
+}
+
+#u {
+    display: block;
+    font-family: cursive;
+    font-size: 2em;
+    text-align: center;
+    line-height: 0;
+    transform: rotate(-45deg);
+}
+
+#gits1 {
+    font-family: "Arial", sans-serif;
+    font-size: 1em;
+    float: left;
+    width: 20em;
+    padding: 1em;
+    transform: translateX(-10vw) translateY(-10vh);
+}
+
+#gits2 {
+    float: right;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    color: white;
+    width: 20em;
+    padding: 1em;
+}
+
+/* images */
+
+#bvslimg{
+    width: 100%;
+    background: url("hbvlj.png");
+}
+
+#extropian{
+    position: relative;
+    background: #FFFFFF;
+    padding: 1em;
+    width: 60vw;
+    margin: auto;
+    top: 10vh;
+    transform: rotate(2.5deg);
+}
+
+#eye {
+    margin: auto;
+    width: 20vw;
+    float: right;
+}
+
+#glass {
+    margin-top: 2vh;
+    margin-right: 7.5vw;
+    float: right;
+    width: 20vw;
+}
+
+#splash {
+    margin-top: 2vh;
+    margin-right: 22.5vw;
+    float: right;
+}
+
+#hs {
+    margin: auto;
+    width: 7vw;
+    transform: translateX(-45vw) rotate(45deg);
+}
+
+/* SVG */
+#wavyRec {
+    transform: translateX(20vw);
+    width: 30em;
+    float: right;
+}
+
+#cube{
+    transform: translateY(60vh);
+    width: 20em;
+}
+
+#rectangle1 {
+    transform: translateY(100vh) rotate(45deg);
+}
+
+#rectangle2 {
+    float: right;
+    transform: translateY(30vh) rotate(45deg);
+}

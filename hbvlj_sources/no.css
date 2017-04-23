@@ -1,0 +1,22 @@
+/*****************/
+/* class mixins */
+/***************/
+
+#css {
+    position: fixed;
+    z-index: 100;
+    font-family: 'Arial', sans-serif;
+    margin: 1em;
+    padding: 0.3em;
+    top: 0;
+    right: 0;
+    
+    background: white;
+    -webkit-box-shadow: 0px 0px 0px 2px #0000ff;
+    -moz-box-shadow: 0px 0px 0px 2px #0000ff;
+    box-shadow: 0px 0px 0px 2px #0000ff;
+}
+
+.bold {
+    font-weight: bold;
+}
