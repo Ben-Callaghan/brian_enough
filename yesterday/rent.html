@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Non-Payment of Studio Rent</title>
+      <meta charset=utf-8>
+       <style>
+           *, *:after, *:before {
+               -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+               box-sizing: border-box;
+           }
+           
+           .svgbg {
+                background: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1024 1024' style='enable-background:new 0 0 1024 1024;' xml:space='preserve'> <rect id='XMLID_1_' fill='#FFFFFF' stroke='#000000' stroke-width='20' x='12' y='12' class='st0' width='1000' height='1000'/> <line id='XMLID_3_' class='st0' fill='#FFFFFF' stroke='#000000' stroke-width='20' x1='12' y1='1012' x2='1012' y2='12'/> <line id='XMLID_4_' class='st0' fill='#FFFFFF' stroke='#000000' stroke-width='20' x1='12' y1='12' x2='1012' y2='1012'/> </svg>") repeat;
+                height: 5vh;
+                width: 5vh;
+               margin: 0.5em;
+               padding: 0.5;
+           }
+           
+           .svglinebg { 
+               background: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 200 3072' style='enable-background:new 0 0 200 3072;' xml:space='preserve'><path id='XMLID_1_' class='st0' fill='none' stroke='#000000' stroke-width='1' d='M101.8-3c0,6.1-1.2,13.8,0,19.7c0.6,3,3.8,4.4,4.8,6.9c1.2,3.1,0.4,7.8,0.4,11.1 c0,6.4,0,12.8,0,19.2c0,3,1.1,8.4-0.3,11.2c-0.6,1.2-2.1,1.4-2.6,2.5c-1.9,3.5-0.2,8.7-1.9,12.7c-1.4,3.4-3.3,4.3-3.5,8.4 c-0.2,3.2,0.1,6.6,0.1,9.8c0.1,5.2-1.5,9.8-1.7,14.9c-0.2,4.2,0.2,8.5,0.1,12.8c-0.2,6.6-6.5,10.4-8,16.9 c-1.1,4.5-0.2,10.1-0.2,14.7c0,2.5-0.5,5.6-0.1,8c0.5,2.8,2.4,4.5,3.1,7.1c0.6,2.2,0.3,4.3,0.3,6.5c-0.1,5.1-0.3,10.4-0.1,15.5 c0.1,4.1,1.1,7,3,10.5c2.2,4.1,2.1,2.3,1.7,9.5c-0.5,11.2-1.3,22.3-1.4,33.6c0,20.1,1.1,40.4,0.2,60.4c-0.3,6.4-1.4,9.8-4.9,14.9 c-1.7,2.4-4,4.4-5.3,7.2c-1.9,4.1-1.6,6.9-1.5,11.6c0.1,7.5,0,15.1,0,22.6c0,7.1-1,15-0.1,22c0.4,2.9,1.8,5.8,2.8,8.5 c3.1,8.1,5.7,14.3,5.5,23c-0.2,8.3,0,16.7,0,25c0,6.9,1.4,15.5-0.4,22.2c-1.2,2.5-2.3,5-3.5,7.5c-3.6,6.9-6.3,14.1-8.2,21.7 c-4.2,16.2-5.7,33.2-7.8,49.7c-2.1,17.1-3.4,33.7-3.2,50.9c0.1,18.1,3.1,36.6,9.2,53.6c1.8,4.9,4.3,10.8,5.8,15.7 c1.3,4.2,1.3-1.1,1.7,7.6c0.5,13.7-0.2,27.5-0.2,41.3c0,8.4,3,16.3,3.4,24.6c0.6,11.3,0.4,23.2-1.6,34.2c-1.5,8.2-3.4,16.2-3.5,24.6 c-0.1,5.5,0.4,11,0.2,16.5c-0.7,17-5,33.3-5,50.3c0,4.5-0.9,9.4,0.6,13.8c1.2,3.5,4.6,5.9,5.7,9.1c1.4,3.9,0.2,12.9,0.2,16.4 c0.3,5.8,0.2,11.7-0.3,17.5c-0.8,2.9-1.7,5.8-2.6,8.6c-2.8,11.6-1.7,24-3.5,35.7c-1.5,9.5,0.5,19.4-0.5,29 c-0.6,6.3-0.8,12.5-1.2,18.7c-0.3,4.7-1.8,8.8-1.7,13.6c0.1,2.1-1.4,4.7-2.1,6.6c-0.8,2.1-0.7,3.7-0.7,5.9c0,2.4,0.7,3.8,1.1,6 c0.2,1-0.3,2-0.1,3c0.3,1.4,1.5,2.8,2.1,4.1c1.9,3.6,1,8.8,1,12.9c0,2.7,0.2,5.5-0.2,8.2c-0.4,2.8-1.3,5.8-0.9,8.7 c0.5,3,2.8,4.5,3.9,7c1.2,2.7,0.2,7.3,0.2,10.3c0,3-0.5,6.3,0.4,9.2c1.4,4.6,4.5,7.7,4.6,12.6c0.1,2.3-0.2,4.7,0,7 c0.1,2.4,0.9,4.7,1.2,7c0.6,4.1,0.3,7.9,0.6,12c0.3,4,3.7,7.3,6.2,10.1c3.1,3.3,6.1,6.7,9.1,10c2.7,2.9,4.9,6.6,7,10 c2.4,4,1.9,7.4,1.9,12c0,4.1,0.3,8.3,0.1,12.4c-0.1,2.9-0.8,3.1-1.9,5.4c-2.4,5.4-1.3,12.5-1.2,18.3c0.1,8.5-3.1,16-3,24.4 c0,3.2-0.9,6.2-1,9.4c-0.1,2.4,0.3,4-1.7,5.7c-1.7,0-2.7,1-2.9,2.9c-0.6,6-1.1,12-1.2,18.1c-0.3,7.1-0.2,14.3-0.2,21.4 c0,4.6,0.3,9.2-0.2,13.7c-0.4,3.2-1.7,6.2-1.9,9.3c-0.4,5.5,1.5,12,0,17.3c-0.6,2.1-2.1,3.8-2.9,5.8c-1.4,3.5-2.3,7.5-2.9,11.3 c-0.8,4.9-1.4,9.2-3.1,13.9c-0.8,2.3-0.9,3.9-0.9,6.3c-0.1,7-1,14,3.7,19.8c5.2,6.4,10.1,11.8,12,20.2c1.4,6.2,0.3,13.2,0.4,19.6 c0.1,7.6-2,14.8-1.9,22.4c0.1,13-3.3,25.9-4.8,38.8c-0.4,2.9-1,5.9-1.3,8.8c-0.1,1.5-0.1,2.9,0.1,4.4c0.9,2.4,2.2,4.5,3.9,6.4 c1.2,4.2-5.2,6.5-7.5,9.1c-2.5,2.8-1.4,6.1-1.4,9.6c0,5.3-1,11.9,0.2,17.1c1.2,4.8,0.8,9.8,0.8,14.8c0,1.5,0.1,3.1,0,4.6 c-0.1,2.4-0.9,3.2-1.1,5.8c-0.1,1.8-0.3,5.9,0.3,7.8c0.5,1.8,0.8,3,0.8,5.1c0,2.1,0.6,6.7,1.2,8.8c0.7,2.3,1.8,3.4,1.9,6.1 c0.1,4,0.5,7.5,3.1,10.8c0.8,1.1,2.3,2.4,3.3,3.3c1.6,1.4,3,1.6,4.7,2.7c2.8,1.7,1.9,4.5,1.8,7.8c-0.2,10.5,1,20.9,1,31.4 c0,6.9-0.1,13.8,0,20.6c0,3.1,0.2,5.8,2.3,8.2c1.3,1.5,2.4,0.9,2.2,3.4c-0.7,2-1.4,3.9-2.1,5.9c-1.8,3.9-3.8,7.8-5.9,11.5 c-5.5,9.9-12.3,18.5-15,29.7c-1.1,4.5-2.4,9.2-2.5,13.9c-0.1,4.9,0.3,9.5-0.4,14.4c-1.7,11.2-5.2,21.9-5.5,33.3 c-0.3,10.5,3.1,20.7,3.1,31.3c0,5.3,0,10.6,0,15.9c0,2.5-1.2,9.6,0.7,12.1c0.9,1.3,1.4,0.7,2.4,2.6c2.4,4.7,5.4,8.9,7.6,13.7 c1.9,4.1,3.5,7.6,4.1,12.1c0.9,6.2,1.2,12.5,1.2,18.8c0,6.3-0.3,11.6,1.5,17.6c1.1,3.6,1.6,6.6,3.5,9.7c2.6,4.3,4.5,10.7,5.8,15.5 c1.9,7.1,3.8,15.4,4.3,22.7c0.2,2.9-0.2,4.7,0.5,7.3c1.4,5.3,0,12.2,0,17.6c0,6.6,0,13.1,0,19.7c0,8.2,0,16.3,0,24.5 c0,9.6,6,21.9,10.1,30.7c4,8.6,5.7,17.9,9.4,26.5c1.1,2.5,1.6,4.1,3.7,6c2.4,2.2,4,0.5,3.4,5.4c-0.5,3.6-3.3,8.2-4.5,11.3 c-2.4,6.2-3.4,12.3-4.7,18.7c-1.5,8.1-2.9,15.2-2.9,23.3c0,4.4,0,8.8,0,13.2c0,1.8,0.5,4.7,0.2,6.5c-0.5,3.2-5.3,5.9-7.5,8.6 c-6.8,8.3-17.8,20.3-18.4,31.8c-0.6,13.4,0.1,27,0.1,40.4c0,8.6,0,17.2,0,25.8c0,13.1,1.8,27.2-1.4,40c-1.7,6.6-3.2,7.9-7.7,13.9 c-4.9,6.5-9.7,14-15.2,20.1c-1.8,2-7.6,5.3-9.1,7.6c-1.8,2.7-0.9,7.4-1,11c-0.1,6.7-0.1,14.9,3.3,20.8c4.6,8,10.5,15.6,10.2,25.2 c-0.5,14.1,3.1,27.6,5.3,41.4c1.2,7.2,2.5,14.3,3.8,21.5c1,5.2,0.9,10.1,1.3,15.3c0.3,3.8,2.2,5.2,4.2,8.2c1.6,2.4,2.3,5.6,4,8.2 c2.3,3.5,5.5,6.3,7.6,10c7.2,12.2,10.8,27.1,14.9,40.5c2.7,8.7,3.8,14.8,3.8,23.8c0,15.7-1.5,31.1-1.5,46.8 c0,11.9,0.4,23.8,0.1,35.7c-0.4,16.7-4.5,32.9-4.7,49.7c-0.1,9.9-0.1,20,0,30c0.1,8,0.4,15.1,4.2,22.1c3.6,6.7,4.5,10.1,3.6,17.9 c-1.7,14.8-6.7,28.7-11.5,42.7c-2,5.8-5.2,11.8-6.2,17.9c-1.4,8.7-0.9,17.8-1.7,26.5c-1.2,13.9-0.3,28.3-0.3,42.3 c0,3.8,0,7.7,0,11.5c0,2.5-0.3,5.3-0.1,7.8c0.2,2.4,1.2,4.6,1.6,7c0.5,3.7,2.5,8.4,3.1,11.9c0.7,4.2-0.1,9.3-0.1,13.6 c0,4.7-0.3,8.8-1.5,13.5c-1.4,5.7-2.9,11.7-4.7,17.3c-0.6,1.9-0.9,3.4-1.3,5.2c-0.4,1.8-1.2,2.7-1.6,4.4c-0.8,3.3,0.2,6.4-1,9.7 c-3.4,9.6-1.9,20.7-1.9,30.8'/> </svg>") no-repeat;
+               
+               background-position: center;
+               
+           }
+       </style>
+   </head>
+    
+   <body style="font-family: sans-serif; font-size: 3em; margin: 0; padding: 1vw;">
+       
+       <div  style="display: flex; flex-direction: row; justify-content: center; width: 100%">
+           
+           <div class="svglinebg" style="max-width: 100vh; padding: 0.1em;">Non-Payment of Studio Rent
+        
+           <div style="max-width: 100vh; display: flex; ">
+               
+               <div style="width: 50%; padding: 0.2em">
+               
+               <span style="font-size: 0.5em">I am saying:</span>
+               <div style="font-size: 0.4em; font-family: fantasy; outline: solid 1px; padding: 1em">"We've had some issues recently with Non-Payment of Studio Rent, so we looked at the letter of agreement and there's no formalised process to deal with this, it just says "If you're not able to pay your rent, speak to a member of the committee" - so we want to fix that and have a more formalised process in place that will protect us but also be fair - we provide the studios at very low cost so it's very likely, a lot of the studio holders will be living on low incomes or be self employed. We want to able to protect them as well and to protect ourselves - set up a system that </div>
+               
+               
+               <br>
+               
+               <span style="font-family: serif; font-size: 0.7em;">A process must be put in place.</span>
+               
+               <br>
+               <br>
+               
+               <div style="font-size: 0.4em; font-family: sans-serif; background-color: black; color: white; padding: 1em; ">I am saying this to my fellow committee members, who are friends through/within/from working together, and to the board of trustees of our organisation, a gallery and studios that is run by us for free. Our type of organisation is called an Artist Run Initiative. The chair of our board is also my boss, the director of another organisation, a publicly funded gallery. I am paid to work there part-time. Another is my co-worker at the same publicly funded gallery and a friend. Two of the board are ex-tutors of mine from my undergrad, one of whom holds a studio at this organisation that I am now helping to run. Another worked for our Artist Run Initiative as a part time accountant for a year. I've heard stories about her kids. I've had a studio here for over four years.</div>
+               
+               <br>
+               
+               
+               <span style="font-family: serif; font-size: 0.7em;">Maybe a series of steps, of emails. Like you don't pay your rent and this email goes out and then another</span>
+               
+               <br>
+               <br>
+               
+               <span style="font-family: serif; font-size: 0.7em;">Would you like the board to get involved?</span>
+               
+               <br>
+               <br>
+               
+               <span style="font-family: serif; font-size: 0.7em;">What do you guys use, gmail? Maybe you could set up an automated reminder to pay that would be sent out to all the studio holders.</span>
+               
+               <br>
+               <br>
+               
+               <div style="font-size: 0.4em; font-family: sans-serif; background-color: black; color: white; padding: 1em; ">I am reminded of the automated letters sent by my local coucil and the debt collection agency that they sell their debt to. Earlier that day I had had to call the debt collection agency because an automated letter was sent to the flat that I share with my brother. The letter said that our debt had increased by about £50 and we would have to renegotiate the terms of our repayment plan. Before calling, I experienced various fleeting moments of rage and hatred, revenge fantasies - useless occupations of my mind, turning the ongoing relationship/negotiation of debt that I had been dummied into by the welfare system where I live over and over, attempting to rationalise my responses and to interpret theirs. The agent I spoke to on the phone was professional and curt. He acknowledged the insignificance of the amount of additional debt and resolved the issue immediately. I had spent the better part of a week worrying that I had been lied too and that an automated system was coming for me and my brother, as had happened over and over again for more than a year.</div>
+               
+               <br>
+               
+               <span style="font-family: serif; font-size: 0.7em;">Certain people don't have a direct debit, they're self employed or - they don't want it set up that way.</span>
+               
+               <br>
+               <br>
+               
+               <span style="font-family: serif; font-size: 0.7em;">People should be responsible for taking care of their own finances.</span>
+               
+               <br>
+               <br>
+               
+               <div style="font-size: 0.4em; font-family: sans-serif; background-color: black; color: white; padding: 1em; ">I am one of those pepole with a direct debit. I consistently pay my studio rent a couple of days late. My brother is three months in arrears on his rent payments. He's self employed and has only begun to make a resonable amount of money from his work. Previously, I was self employed and wasn't able to pay my rent at least twice. I was sent an email reminding me to do so by a previous committee member who is now a friend. He gave me a solo show at the gallery that is part funded by the studios when I was a year out of Uni.
+               <br><br>I am now in a position where I have to give my brother terms of repayment for the debt that he owes to our Artist Run Organisation.</div>
+               
+               <br>
+               
+               <span style="font-family: serif; font-size: 0.7em;">You all work for free. You don't want to be spending your time chasing after people for money.
+               <br><br>A clamour of agreement goes around the table.</span>
+               </div>
+               
+               <div style="width: 50%; padding: 0.2em; font-size: 0.3em; font-family: serif; display: flex; flex-direction: column; justify-content: space-between">
+                   
+                   <div><div class='svgbg' style="float: left;"></div> A few things have come up in relation to studio holders agreement<br>
+                   We’re not explicit about people’s property being their responsibility<br><br>
+                   Non-payment of rent - we want to support oursellves and our studio holders</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> It has to be expilcit that rent has to be paid </div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> Currently only says to talk to committee but might need to more formal/impartial procedure</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> A grievance procedure with a few steps - written warning, escalating to trustees, assessed on case-by-case basis</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> Would it be useful to have trustees involved earlier?</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> We should only go to trustees if problem can’t be resolved</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> email needs to set out process</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> Rent reminder emails?</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> We should make everyone have direct debits </div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> Should build direct debit into agreement</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> policies should be reviewed annually</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> Should reccommend in agreement that people insure their own equipment</div>
+                   
+                   <div><div class='svgbg' style="float: left;"></div> is opening a new bank account a good opportunity to ensure everyone in on a direct debit? We should tell studio holders this is the plan <div>
+                   
+                    </div>
+
+               </div>
+        
+           </div>
+           
+       </div>
+      	  
+    </body>
+</html>

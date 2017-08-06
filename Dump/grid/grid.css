@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+    
+
+#background {
+    background-color: transparent;
+    background-image: 
+ 
+        linear-gradient(0deg, transparent 70%, black 70%, black 80%, transparent 80%),
+        
+        
+        linear-gradient(90deg, transparent 20%, black 20%, black 30%, transparent 30%);
+    
+    height: 1000%;
+    width: 1000%;
+    background-size: 1% 1%;
+}
+
+img {
+    height: 20em;
+    width: 20em;
+}
+
+#glass {
+    background-image: linear-gradient(transparent, blue);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    z-index: 100;
+}
+    
+#text {
+    background-image: linear-gradient(100deg, red, transparent);
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    margin-top: -9em;
+    margin-left: -15em;
+    z-index: 100;
+    
+    padding: 0.2em;
+    
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+}

@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+}
+
+#flexbox {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    outline: .1em solid black;
+    background-color: lightcoral;
+    margin: auto;
+}
+
+.content {
+    width: 25%;
+    height: 20%;
+    outline: .1em solid black;
+    background-color: white;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        width: 10%;
+    }
+}

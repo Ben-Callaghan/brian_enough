@@ -1,0 +1,12 @@
+#float {
+    font-family: sans-serif, "Arial";
+    position: fixed;
+    z-index: -10;
+    margin: 10% 50%;
+}
+
+.threeHolder {
+    width = 75%;
+    height = 75%;
+    border = 1px solid black;
+}

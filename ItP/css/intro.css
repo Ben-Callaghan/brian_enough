@@ -1,0 +1,326 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    text-rendering: optimizeSpeed;
+}
+
+/*UI styling*/
+
+.uiContainer {
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    /*-webkit-transform: translateZ(0);
+            transform: translateZ(0);*/
+
+    pointer-events: none;
+}
+
+/*pop up menu styling*/
+
+.menuContainer {
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+
+  -ms-flex: 0 0 100%;
+
+  min-height: 0;
+
+  -webkit-box-orient: horizontal;
+
+  -webkit-box-direction: normal;
+
+      -ms-flex-direction: row;
+
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  margin: 1em;
+}
+
+.tagMenuHolder{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+
+  /*flex-basis: 0 0 50%;
+
+  outline: 1px solid red;*/
+}
+
+.infoMenuHolder{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+
+  /*flex-basis: 0 0 50%;
+
+  outline: 1px solid red;*/
+
+}
+
+.menu {
+  color: black;
+  overflow: scroll;
+  background-color: white;
+  border: solid 3px black;
+  display: none;
+  /*margin: 1em;
+  padding: 0.5em;*/
+  pointer-events: all;
+}
+
+.tagMenu {
+  font-size: 0.8em;
+  width: 13em;
+  margin: 1em;
+  padding: 0.5em;
+  /*max-height: 100%;*/
+}
+
+.infoMenu {
+  font-size: 0.8em;
+  max-width: 32em;
+  /*max-height: 100%;*/
+  line-height: 1.5em;
+  padding: 0.7em 1.5em 1.5em 1.5em;
+}
+
+.menuX {
+  font-size: 1.2em;
+  position: relative;
+  float: right;
+  z-index: 1;
+}
+
+/* header footer*/
+
+.header {
+    outline: solid 2px white;
+    font-family: Times, serif;
+    padding: 0.5em;
+    background-color: black;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    flex: 0 0 1.5em;
+}
+
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0.5em;
+    background-color: black;
+    outline: solid 2px white;
+    pointer-events: all;
+    flex: 0 0 2.5em;
+}
+
+.button {
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.buttonDown {
+    outline: solid 2px white;
+    cursor: pointer;
+}
+
+/*Artwork styling*/
+
+.itemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+  background-color: black;
+  padding: 1em;
+}
+
+.item {
+    border-right: solid 1px darkgray;
+    border-bottom: solid 1px darkgray;
+    border-radius: 3px;
+    padding: 0.5em;
+
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+
+    /*display: block;*/
+
+    margin: 0.2em;
+    margin-bottom: 2.5em;
+}
+
+.year {
+  font-family: Times, serif;
+}
+
+.work {
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 1em;
+    line-height: 0.6em;
+}
+
+.bodyCopy {
+    font-family: Times, serif;
+    font-weight: bold;
+    margin: 0.3em 0em 0em 0em;
+}
+
+.bodyBold {
+    font-weight: bolder;
+}
+
+.description {
+    border-bottom: solid 1px white;
+    margin: 0.3em 0em 0em 0em;
+}
+
+.avatar {
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-weight: 800;
+    left: 5px;
+    color: blue;
+    float:right;
+}
+
+.tag {
+  background-color:white;
+  margin: 0.2em;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: sans-serif;
+  padding: 0.2em;
+  color: black;
+  float: left;
+  cursor: pointer;
+}
+
+.tagSelected {
+    background-color: blue;
+    color: white;
+}
+
+.tagTest {
+  background-color: yellow;
+  font-size: 2em;
+}
+
+.tagMenuTag {
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.tagMenuItemButtonDown {
+  color: blue;
+  font-style: normal;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.spacer {
+    height: 2em;
+}
+
+.endSpacer {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 100%;
+    height: 5em;
+}
+
+/*Mobile changes*/
+
+@media only screen and (max-width: 1024px) {
+  .itemContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0.2em;
+  }
+
+  .item {
+    border-right: hidden 0px black;
+    border-bottom: solid 2px darkgray;
+    flex: 0 0 auto;
+  }
+
+}

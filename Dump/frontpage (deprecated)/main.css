@@ -1,0 +1,152 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header {
+    
+    flex-shrink: 0;
+    
+    padding: .3em;
+    width: 9.5em;
+    height: 1.7em;
+    font-size: 2em;
+    
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: blue;
+    
+    margin: 0.5em;
+}
+
+#sidebar {
+    
+    padding: 1em;
+    max-width: 18em;
+    font-size: .95em;
+    
+    color: dimgray;
+    font-family: Georgia, serif;
+    background-color: white; 
+    
+    margin: 1em;
+}
+
+#images {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: .25em;
+}
+
+.content {
+    padding: .25em;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+img {
+    max-height: 80%;
+}
+
+a {
+    color: dimgray;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    #nav {
+        flex-direction: row;
+    }
+    
+    #header { 
+        margin: .5em;
+        
+        padding: .3em;
+        max-width: 9.5em;
+        max-height: 1.7em;
+        font-size: 2em;
+    }
+    
+    #sidebar {
+        margin: 1em;
+        
+        padding: 1em;
+        max-width: 18em;
+        font-size: .95em;
+    }
+    
+    #images {
+        flex-direction: column;
+    }
+    
+    .content{
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        max-height: auto;
+    }
+}
+
+@media only screen and (max-device-width: 700px) {
+    #nav {
+        flex-direction: row-reverse;
+    }
+    
+    #header { 
+        margin: .5em;
+        
+        padding: .3em;
+        max-width: 9.5em;
+        max-height: 1.7em;
+        font-size: 3em;
+    }
+    
+    #sidebar {
+        margin: 1em;
+        
+        padding: 1em;
+        max-width: 18em;
+        font-size: 1.5em;
+    }
+    
+    #images {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    
+    .content {
+        width: 100%;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+

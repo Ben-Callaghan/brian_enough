@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="frontpage.css"/>
+    <title> Ben Callaghan Under Construction </title>
+    </head>
+    
+    <body>
+        
+        <script src="three.min.js"></script>
+        <script src="ColladaLoader.js"></script>
+        
+        <div id="gradient"></div>
+        <div id="renderFront"></div>
+        <div id="renderBack"></div>
+        
+        <div class="grid grid-pad">
+            <table>
+                
+ <!-- Top row:   About    Work  -->             
+                <tr>
+                    
+                    <td class="quarterCell dispTogB">
+                        <div class="content-center">
+                            <a href="">About</a>
+                        </div>
+                    </td>
+                    
+                    <td class="quarterCell dispTogB">
+                        <div class="content-center">
+                            <a id="Work" title="Work" href="#" onclick="displayCell();">Work</a>
+                        </div>
+                    </td>
+                    
+                </tr>
+                
+<!-- Bottom row:    Blank   Copyleft  -->                
+                <tr>
+                    
+                    <td class="quarterCell dispTogB"></td>
+                    
+                    <td class="quarterCell dispTogB">
+                        <div class="content-logo">
+                            <div id="logo"><img style="height:1em; width: 1em; transform: translateY(11%);" src="zero.svg" /> Ben Callaghan</div>
+                        </div>
+                    </td>
+                    
+                </tr>
+ 
+ <!-- Hidden row:   Work    -->               
+                <tr>
+                    <td class="fullCell" id="dispTogA">
+                        <div class="content-list">
+                            <li>Work</li>
+                            <li>Work</li>
+                            <li>Work</li>
+                        </div>
+
+                        <div class="closeX">
+                    <a id="X" title="X" href="#" onclick="displayCell();">x</a>
+                </div>
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </div>
+
+        <script src="render.js"></script>
+        
+        <script src="frontpage.js"></script>
+
+    </body>
+</html>

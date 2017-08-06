@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#frame {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 100;
+    -webkit-box-shadow:inset 0px 0px 0px 10px #0000ff;
+    -moz-box-shadow:inset 0px 0px 0px 10px #0000ff;
+    box-shadow:inset 0px 0px 0px 10px #0000ff;
+}
+
+#threeFrame {
+    z-index: 200;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    pointer-events:none;
+    outline: solid 1px red;
+}
+
+#gridTable {
+    
+    width: 180em;
+    height: 180em;
+    position: fixed;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+td {
+    /*outline: 1px solid blue;*/
+    height: auto;
+    width: auto;
+    
+    -webkit-box-shadow: 0px 0px 0px 2px #0000ff;
+    -moz-box-shadow: 0px 0px 0px 2px #0000ff;
+    box-shadow: 0px 0px 0px 2px #0000ff;
+}
+
+.floatDiv {
+    position: fixed;
+}
+
+#scroll {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    z-index: 7;
+    /*outline: solid 1px red;*/
+}
+
+.blubox {
+    background: white;
+    -webkit-box-shadow: 0px 0px 0px 2px #0000ff;
+    -moz-box-shadow: 0px 0px 0px 2px #0000ff;
+    box-shadow: 0px 0px 0px 2px #0000ff;
+}
+
+#title {
+    width: 20em;
+    height: 4em;
+    text-align: center;
+    margin: auto;
+    margin-top: 25%; 
+    display: table;
+    transform: translateY(-50%);
+}
+
+.vertCenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#gits1 {
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    float: left;
+    width: 20em;
+    padding: 1em;
+}
+
+#cube{
+    width: 20em;
+    height: 20em;
+    bottom: 0;
+    right: 10%;
+    z-index: 5;
+}
+
+#wavyRec {
+    width: 30em;
+    height: 50em;
+    top: 10%;
+    left: 0;
+    z-index: -1;
+}
+
+*before, *after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

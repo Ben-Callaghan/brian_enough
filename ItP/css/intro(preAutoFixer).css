@@ -1,0 +1,231 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Visualisation*/
+
+.statCanvas {
+    image-rendering: crisp-edges;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+}
+
+/*UI styling*/
+
+.uiContainer {
+    position: fixed;
+    
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform: translateZ(0);
+}
+
+/*pop up menu styling*/
+
+.menuContainer {
+  
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             
+  
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 1em;
+  height: 100%;
+}
+
+.menu {
+  color: black;
+  overflow: scroll;
+  background-color: white;
+  border: solid 3px black;
+  display: none;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+.tagMenu {
+  font-size: 0.8em;
+  width: 13em;
+  max-height: 100%;
+}
+
+.infoMenu {
+  font-size: 0.8em;
+  max-width: 32em;
+  height: 100%;
+  line-height: 1.5em;
+  padding: 1.5em;
+}
+
+/* header footer*/
+
+.header {
+    outline: solid 2px white;
+    font-family: Times, serif;
+    padding: 0.5em;
+    background-color: black;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0.5em;
+    background-color: black;
+    outline: solid 2px white;
+}
+
+.button {
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.buttonDown {
+    outline: solid 2px white;
+    cursor: pointer;
+}
+
+/*Artwork styling*/
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 1em;
+}
+
+.item {
+    border-right: solid 1px darkgray;
+    border-bottom: solid 1px darkgray;
+    border-radius: 3px;
+    padding: 0.5em;
+    flex-basis: 30%;
+    margin: 0.2em;
+    margin-bottom: 2.5em;
+}
+
+.year {
+  font-family: Times, serif;
+  /*color: coral;*/
+}
+
+.title {
+  /*color: DodgerBlue;*/
+}
+
+.work {
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 1em;
+    line-height: 0.6em;
+}
+
+.bodyCopy {
+    font-family: Times, serif;
+    font-weight: bold;
+}
+
+.bodyBold {
+    font-weight: bolder;
+}
+
+.description {
+    border-bottom: solid 1px white;
+}
+
+.avatar {
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-weight: 800;
+    left: 5px;
+    color: blue;
+    float:right;
+}
+
+.tag {
+  background-color:white;
+  margin: 0.2em;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: sans-serif;
+  padding: 0.2em;
+  color: black;
+  float: left;
+}
+
+.tagSelected {
+    background-color: blue;
+    color: white;
+}
+
+.tagMenuTag {
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.tagMenuItemButtonDown {
+  color: blue;
+  font-style: normal;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.spacer {
+    height: 2em;
+}
+
+.endSpacer {
+    align-self: flex-end;
+    width: 100%;
+    height: 5em;
+}
+
+/*Mobile changes*/
+
+@media only screen and (max-width: 1024px) {
+  .itemContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 0.2em;
+  }
+
+  .item {
+    border-right: hidden 0px black;
+    border-bottom: solid 2px darkgray;
+  }
+
+}

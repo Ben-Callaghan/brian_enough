@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC>
+
+<html>
+<head>
+    
+    <style>
+        #leftbox {
+            margin-bottom:0vh;
+            float: left;
+            outline: 1px solid black;
+        }
+        
+        #rightbox {
+            margin-bottom:0vh;
+            float:right;
+            outline: 1px solid black;
+        }
+        
+    </style>
+        
+    </head>
+    
+    <body>
+        <div id="leftbox"> *content* </div>
+        <div id="rightbox"> *content* </div>
+        
+        <script>
+            
+            var alpha = ["a","b","c","d","e","f","g","h"];
+            var alphaDiv = document.getElementById("leftbox");
+            
+            function addTextArray(targetDiv, textArray) {
+                for (i=0; i < textArray.length; i++) {
+                    targetDiv.innerHTML += textArray[i];
+                }
+            }
+            
+            addTextArray(alphaDiv, alpha);
+            
+        </script>
+        
+    </body>
+<html>
